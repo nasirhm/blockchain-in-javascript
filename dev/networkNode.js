@@ -76,6 +76,7 @@ app.get('/mine', function (req, res) {
     });
     //Just Register the Node to their BlockChain
     app.post('/register-node', function (req, res) {
+        const newNodeUrl = req.body.newNodeUrl;
         
 
     });
