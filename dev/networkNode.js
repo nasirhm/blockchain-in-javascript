@@ -77,8 +77,8 @@ app.get('/mine', function (req, res) {
     //Just Register the Node to their BlockChain
     app.post('/register-node', function (req, res) {
         const newNodeUrl = req.body.newNodeUrl;
-        
-
+        bitcoin.networkNodes.push(newNodeUrl);
+         res.json({note: 'New Node registered successfully with node'});
     });
     //Register Multiple Nodes at Once
     app.post('/reigster-nodes-bulk', function (req, res) {
