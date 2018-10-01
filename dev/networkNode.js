@@ -72,11 +72,11 @@ app.get('/mine', function (req, res) {
                      note: "New node registered in Network Successfully"
                  });
             }
-            )
+            );
     });
     //Just Register the Node to their BlockChain
     app.post('/register-node', function (req, res) {
-
+        
 
     });
     //Register Multiple Nodes at Once
